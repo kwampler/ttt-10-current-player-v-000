@@ -19,8 +19,7 @@ def position_taken?(board, location)
 end
 end
 def turn_count(board)
-  def move(board, index, current_player = X)
-  def position_take?(board, location)
+  position_take?(board, location)
     board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
     turns = 1
     board.each do |turn|
