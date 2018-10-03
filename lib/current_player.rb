@@ -1,11 +1,11 @@
 def turn_count(board)
-    counter = 0
-    board.each do |turn|
-      if turn == "X" || turn == "O"
-        counter += 1
+    turns = 0
+    board.each do |element|
+      if element == "X" || element == "O"
+        turns += 1
       end
     end
-    counter
+    turns
 end
 
 
