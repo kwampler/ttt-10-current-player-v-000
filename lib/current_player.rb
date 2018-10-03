@@ -9,11 +9,14 @@ def turn(board)
   else
     turn(board)
   end
+end
 def move(board, index, current_player = "X")
   board[index] = current_player
 end
+end
 def position_taken?(board, location)
   board[location] != " " && board[location] != ""
+end
 end
 def turn_count(board)
   def move(board, index, current_player = X)
