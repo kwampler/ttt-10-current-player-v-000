@@ -18,7 +18,14 @@ end
 def turn_count(board)
   def move(board, index, current_player = X)
   def position_take?(board, location)
-    board = [" ", " ", " ", " ",]
+    board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+    turns = 1
+    board.each do |turn|
+      puts " This is the turn number #{turns}"
+      counter += 1
+    end
+  end
+  
 
 
 
@@ -26,10 +33,3 @@ def turn_count(board)
 
 
 
-play(board)
-    turns = 0
-    until turns >= 9
-    turn(board)
-    turns += 1
-    end
-end
